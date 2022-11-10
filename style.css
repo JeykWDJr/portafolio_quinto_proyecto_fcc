@@ -1,0 +1,249 @@
+:root {
+  --color-fondo: #0c3866;
+  --color-fondo2: #007cc0;
+  --color-fondo3: #ffc20e;
+  --color-fondo4: #fff;
+  --color-texto1: #fff;
+  --color-texto2: #0c3866;
+  --color-texto3: #007cc0;
+  --color-texto4: #ffc20e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo2);
+}
+
+   /*    Navegation    */
+
+#navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  background-color: var(--color-fondo);
+  z-index: 1;
+}
+
+#navbar .linknav {
+  text-decoration: none;
+  color: var(--color-texto1);
+  font-size: 1.3rem;
+  line-height: 55px;
+  margin: 0 1.3rem;
+}
+
+.navmenu {
+  display: flex;
+  list-style: none;
+}
+
+.linknav:hover {
+  background-color: var(--color-fondo3);
+  padding: 5px;
+  transition: all 0.3s ease 0s;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+
+   /*   Image    */
+
+.img_fondo {
+  width:100%;
+  height: 625px;
+  position: relative;
+  display: inline-block;
+}
+
+.text1 {
+  position: absolute;
+  top: 15rem;
+  right: 5rem;
+  color: var(--color-texto4);
+  font-size: 5rem;
+  font-family: 'Anybody', cursive;
+  font-weight: 500;
+}
+
+.text2 {
+  position: absolute;
+  top: 23rem;
+  right: 5rem;
+  color: var(--color-texto1);
+  font-size: 5rem;
+  font-family: 'Anybody', cursive;
+}
+
+
+   /*    Section Two    */
+
+  .project-text {
+    width: 95vw;
+    text-align: center;
+    font-size: 3rem;
+    margin: 4rem auto 2rem ;
+    background-color: var(--color-fondo3);
+    padding: 2rem;
+    color: var(--color-texto1);
+   }
+
+#projects .frontpage {
+    width: 40vw;
+  }
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    column-gap: 11.5rem;
+    row-gap: 3rem;
+    width: calc(100 / 2);
+    max-width: auto;
+    margin-left: 3.8rem;
+    margin-right: 7.5rem;
+  }
+
+  #projects p {
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--color-fondo);
+    color: var(--color-texto1);
+    padding: 1rem;
+    width: 40vw;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+#projects p:hover {
+    background-color: var(--color-fondo3);
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transform: translateY(8px);
+}
+
+#profile-link {
+    text-decoration: none;
+}
+
+
+    /*    Section three   */
+
+#contact_section {
+  background-color: var(--color-fondo3);
+  margin-top: 3rem;
+  height: 500px;
+  padding: 3rem;
+  color: var(--color-texto2);
+  text-align: center;
+}
+
+#form_contact input, #comment {
+  width: 400px;
+  margin-top: 0.2rem ;
+  padding: 1rem;
+  border-color: transparent;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+#submit {
+  background-color: var(--color-fondo4);
+  color: var(--color-texto2);
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  width: 100px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#submit:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-texto4);
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+    /*    Footer    */
+
+footer {
+    background-color: var(--color-fondo);
+    color: var(--color-texto1);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 2;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+      }
+
+
+@media screen and (max-width: 1023px) {
+
+  body {
+      overflow: hidden;
+    }
+
+  .text1, .text2 {
+      font-size: 2rem;
+    }
+
+  #navbar .linknav {
+      font-size: 1rem;
+    }
+
+  #project-tile {
+      font-size: 2rem;
+    }
+
+  #projects {
+      margin-left: 2.5rem;
+      display: grid;
+    }
+
+  footer {
+      font-size: 1rem;
+    }
+
+  #projects .frontpage {
+      width: 35vw;
+    }
+
+
+  #projects p {
+    width: 35vw;
+      
+    }
+
+  }
